@@ -5,8 +5,8 @@
 #include <math.h>
 #include <map>
 
-#include "Implicant.cpp"
-#include "QmAlgo.cpp"
+#include "Implicant.h"
+#include "QmAlgo.h"
 
 using namespace std;
 
