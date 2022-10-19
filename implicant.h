@@ -1,24 +1,48 @@
 #ifndef Implicant_H
 #define Implicant_H
-
-#include "Term.h"
-#include <vector>
+#include <iostream>
+#include <fstream>
+#include <map>
+#include <set>
 
 using namespace std;
 
 class Implicant{
-    int noTerms;
+    string name; // e.g., A'BCD, which is equivalent to 0111
+    string binary; // 0111
+    bool dontCare; // true if object is a don't care
+    int val;
 
-    set<Term> coveredTerms;
+    set<int> coveredImplicants;
 
+    void pad(int n); // pad the binary representation of the Implicant with zeroes according to the number of bits
 public:
-    
-
-    void addTerm(const Term& term);
+    Implicant(int variables, int n,bool dontcare); // paramterized constructor
 
 
-    int getNoTerms();
+    string dectoBin(int n); // convert a decimal to a binary
 
-    set<Term> getCoveredTerms();
+
+    string getName();
+    string getBin();
+    bool isDontCare();
+    int getVal();
+    int getNoImplicants();
+
+    void addImplicant(int num);
+
+
+
+    set<int> getCoveredImplicants();
+
+    void replace_complements(string a); // replace the two differeing digits  with "-"
+
+    void changeBit(int i);
+
+    bool operator ==(Implicant& Implicant1); // check if two Implicants are equivalent
+    char& operator [](int i);
+
 };
+
+
 #endif
