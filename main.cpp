@@ -1,19 +1,14 @@
 #include <iostream>
-#include<fstream>
-#include<string>
-#include<vector>
-#include<math.h>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <math.h>
 #include <map>
 
 #include "Implicant.h"
 #include "implicant.h"
 
 using namespace std;
-
-// struct temp{
-//     string a;
-//     int b;
-// };
 
 int Partition(vector<int>& x, int begin, int end) {
 	int Pivot = begin + (end - begin) / 2;
@@ -100,10 +95,20 @@ int main(){
     // int n;
     // cin >> n;
     // string name="";
-    cout << char('A'+1);
+    // cout << char('A'+1);
     // for(int i=0;i<n;i++){
     //     name+="A"+i;
     // }
     // cout << name << '\n';
+
+    // int vars, n;
+    // cin >> vars >> n;
+    // while(n!=-1){
+    //     Implicant t1(vars,n,false);
+    //     cout << "Implicant Name: " << t1.getName() << '\n';
+    //     cout << "Implicant Binary: " << t1.getBin() << '\n';
+    //     cout << "Implicant Value: " << t1.getVal() << '\n';
+    //     cin >> vars >> n;
+    // }
 
 }

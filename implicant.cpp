@@ -4,8 +4,7 @@
 Implicant::Implicant(int variables, int n,bool dontcare){
     this->val=n; // value 
 
-
-    this-> binary = dectoBin(n);
+    this->binary = dectoBin(n);
     pad(variables-1); // padding the binary with zeroes
 
     int index= binary.length()-1; // start from the end since the binary is read from right to left
@@ -22,16 +21,15 @@ Implicant::Implicant(int variables, int n,bool dontcare){
     this->dontCare=dontCare;
 }
 
-
-
-
-
+Implicant::Implicant(string x) {
+    this->binary = x;
+}
 
 string Implicant::dectoBin(int n){
-    if(n==0)
+    if(n == 0)
         return "0";
     
-    if(n%2==0)
+    if(n % 2 == 0)
         return dectoBin(n/2)+"0";
     
     return dectoBin(n/2)+"1";
@@ -72,19 +70,11 @@ bool Implicant::isDontCare(){
     return dontCare;
 }
 
-
-void Implicant::replace_complements(string a){
-    string temp="";
-    for(int i=0;i<(int)a.size();i++){
-        if(a[i]!=this->binary[i])
-            temp+="-";
-        else
-            temp+=a[i];
-    }
-
-    this->binary=temp;
+string Implicant::replace_complements(int idx){
+    string temp = binary;
+    this->binary[idx] = '-';
+    return temp;
 }
-
 
 bool Implicant:: operator ==(Implicant& Implicant1){
     return this->binary==Implicant1.binary;
@@ -107,11 +97,10 @@ set<int> Implicant::getCoveredImplicants(){
     return this->coveredImplicants;
 }
 
-
 void Implicant::changeBit(int i){
-    if(this->binary[i]=='0')
-        this->binary[i]='1';
+    if(this->binary[i] == '0')
+        this->binary[i] = '1';
     else
-        this->binary[i]='0';
+        this->binary[i] = '0';
 }
 

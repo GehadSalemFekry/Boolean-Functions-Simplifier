@@ -17,11 +17,10 @@ class Implicant{
 
     void pad(int n); // pad the binary representation of the Implicant with zeroes according to the number of bits
 public:
-    Implicant(int variables, int n,bool dontcare); // paramterized constructor
-
+    Implicant(int variables, int n, bool dontcare); // paramterized constructor
+    Implicant(string string);
 
     string dectoBin(int n); // convert a decimal to a binary
-
 
     string getName();
     string getBin();
@@ -35,7 +34,7 @@ public:
 
     set<int> getCoveredImplicants();
 
-    void replace_complements(string a); // replace the two differeing digits  with "-"
+    string replace_complements(int idx); // replace the two differeing digits  with "-"
 
     void changeBit(int i);
 
