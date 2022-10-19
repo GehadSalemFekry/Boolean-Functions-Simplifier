@@ -1,8 +1,7 @@
 #include "Implicant.h"
 
 
-Implicant::Implicant(int variables, int n,bool dontcare){
-    this->val=n; // value 
+Implicant::Implicant(int variables, int n){
 
     this->binary = dectoBin(n);
     pad(variables-1); // padding the binary with zeroes
@@ -18,12 +17,19 @@ Implicant::Implicant(int variables, int n,bool dontcare){
         }
     }
 
-    this->dontCare=dontCare;
 }
 
-Implicant::Implicant(string x) {
+Implicant::Implicant(string x, set<int> coveredTerms) {
     this->binary = x;
+    this->coveredTerms=coveredTerms;
 }
+
+Implicant::Implicant(const Implicant& imp){
+    this->binary=imp.binary;
+    this->name=imp.name;
+    this->coveredTerms=imp.coveredTerms;
+}
+
 
 string Implicant::dectoBin(int n){
     if(n == 0)
@@ -62,13 +68,6 @@ string Implicant::getName(){
     return name;
 }
 
-int Implicant::getVal(){
-    return val;
-}
-
-bool Implicant::isDontCare(){
-    return dontCare;
-}
 
 string Implicant::replace_complements(int idx){
     string temp = binary;
@@ -84,17 +83,21 @@ char& Implicant:: operator[](int i){
     return this->binary[i];
 }
 
+bool Implicant:: operator <(Implicant& Implicant1){
+    return this->binary<Implicant1.binary;
+}
+
 void Implicant::addTerm(int num){
-    coveredImplicants.insert(num);
+    coveredTerms.insert(num);
 }
 
-int Implicant::getNoImplicants(){
-    return this->noImplicants;
+int Implicant::getNoTerms(){
+    return this->coveredTerms.size();
 }
 
 
-set<int> Implicant::getCoveredImplicants(){
-    return this->coveredImplicants;
+set<int> Implicant::getCoveredTerms(){
+    return this->coveredTerms;
 }
 
 void Implicant::changeBit(int i){
