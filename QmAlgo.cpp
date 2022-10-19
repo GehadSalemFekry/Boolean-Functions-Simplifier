@@ -83,7 +83,7 @@ void QmAlgo::reduce(){
 
 void QmAlgo::populatePrimeImplicants(){
     for (auto imp: Implicants){
-        if (imp.second)
+        if (imp.second) // to be done: check if all terms of the implicants are dontcares, so dont add this implicant
             primeImplicants.push_back(imp.first);
     }
 }
