@@ -4,18 +4,22 @@
 #include <fstream>
 #include <map>
 #include <vector>
-#include "implicant.h"
 #include "Implicant.h"
 
 
 using namespace std;
 
-//Naming Convention:
 /*
+Naming Convention:
  - Maps are capitalized
  - Vectors are camelCased
-
 */
+
+struct comparatorImp {
+    bool operator()(const Implicant &a, const Implicant &b) const {
+        return a.binary < b.binary;
+    }
+};
 
 class QmAlgo {
     int variables; // no of variables
@@ -29,7 +33,7 @@ class QmAlgo {
     map<int,bool> Terms; // storing minterms and dont cares, such that false means dontcare
 
 
-    map<Implicant, bool> Implicants; // map to store the minImplicants and don't care values
+    map<Implicant, bool, comparatorImp> Implicants; // map to store the minImplicants and don't care values
     // istaken or not
 
     vector<Implicant> primeImplicants;

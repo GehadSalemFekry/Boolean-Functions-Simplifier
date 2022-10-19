@@ -5,9 +5,8 @@
 #include <math.h>
 #include <map>
 
-#include "Implicant.h"
-#include "QmAlgo.h"
-#include "implicant.h"
+#include "Implicant.cpp"
+#include "QmAlgo.cpp"
 
 using namespace std;
 
@@ -95,17 +94,9 @@ int main(){
 
 	QmAlgo test1;
 
-	vector<int> minterms,dontcares;
+	vector<int> minterms = {1, 2, 5}, dontcares = {0, 8};
 
-	minterms.push_back(1);
-	minterms.push_back(2);
-	minterms.push_back(5);
-
-	dontcares.push_back(0);
-	dontcares.push_back(8);
-
-	test1.populateMinterms(4,minterms,dontcares);
-
-	
+	test1.populateMinterms(4, minterms, dontcares);
+    test1.printPIs();
 
 }

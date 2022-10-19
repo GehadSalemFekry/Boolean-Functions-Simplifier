@@ -21,25 +21,21 @@ void QmAlgo::populateMinterms(int variables, vector<int>& minterms, vector<int>&
         Terms[dont]=false;
     }
 
-
 }
-
 
 // void QmAlgo::validate(){
     
 // }
-
 
 void QmAlgo::reduce(){
     
 
     // int stringSize= variables;
 
-
-    map<Implicant, bool> merged = Implicants; // map to store the minImplicants and don't care values
+    map<Implicant, bool, comparatorImp> merged = Implicants; // map to store the minImplicants and don't care values
     while (!merged.empty()) {
 
-        map<Implicant, bool> newlyMerged;
+        map<Implicant, bool, comparatorImp> newlyMerged;
 
         for (auto cur : merged) {
             Implicant imp = cur.first; // to change its bits and check its availability in the map
@@ -86,11 +82,12 @@ void QmAlgo::reduce(){
 }
 
 void QmAlgo::populatePrimeImplicants(){
-    for(auto imp: Implicants){
-        if(imp.second)
+    for (auto imp: Implicants){
+        if (imp.second)
             primeImplicants.push_back(imp.first);
     }
 }
+
 void QmAlgo::printPIs(){
     cout << "\t\t\tPrime Implicants\n"; // centered
 
@@ -104,8 +101,8 @@ void QmAlgo::printPIs(){
         set<int> coveredTerms=it.getCoveredTerms();
 
         // minterms
-        for(auto minterm:coveredTerms){
-            if(Terms[minterm]){
+        for (auto minterm:coveredTerms){
+            if (Terms[minterm]) {
                 cout << minterm << ",";
             }
             cout << '\n';
@@ -113,8 +110,8 @@ void QmAlgo::printPIs(){
         
 
         // dontcares
-        for(auto dontcare:coveredTerms){
-            if(!Terms[dontcare]){
+        for (auto dontcare:coveredTerms){
+            if (!Terms[dontcare]) {
                 cout << dontcare << ",";
             }
             cout << '\n';

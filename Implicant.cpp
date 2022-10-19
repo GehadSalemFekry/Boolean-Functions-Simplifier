@@ -75,7 +75,7 @@ string Implicant::replace_complements(int idx){
     return temp;
 }
 
-bool Implicant:: operator ==(Implicant& Implicant1){
+bool Implicant:: operator ==(const Implicant& Implicant1){
     return this->binary==Implicant1.binary;
 }
 
@@ -83,7 +83,7 @@ char& Implicant:: operator[](int i){
     return this->binary[i];
 }
 
-bool Implicant:: operator <(Implicant& Implicant1){
+bool Implicant:: operator <(const Implicant& Implicant1){
     return this->binary<Implicant1.binary;
 }
 
