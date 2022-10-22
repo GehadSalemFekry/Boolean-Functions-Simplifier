@@ -115,6 +115,7 @@ void QmAlgo::populateEssentialPrimeImplicants() {
                 }
             }
             essentialPIs.insert(toInclude); // these aren't EPIs but to be added to the minimized expression
+            for (int u : toInclude.getCoveredTerms()) isMinTermCovered[u] = true;
         }
     }
 
