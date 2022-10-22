@@ -95,12 +95,8 @@ int main() {
 
 	QmAlgo test1;
 
-	vector<int> minterms = {1, 2, 5}, dontcares = {0, 8, 9};
+	vector<int> minterms = {0, 1, 4, 5, 13, 14, 15}, dontcares = {};
 
 	test1.populateMinterms(4, minterms, dontcares);
-    test1.printPIs();
-    test1.printEPIs();
-
-    // test1.populateEssentialPrimeImplicants(minterms);
-
+    test1.runAlgo();
 }

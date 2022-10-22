@@ -14,6 +14,7 @@ public:
     int noVariables;
     set<int> coveredTerms;
 
+    Implicant();
     Implicant(int variables, int n); // paramterized constructor
     Implicant(string string, set<int> coveredTerms);
     Implicant(const Implicant& imp);

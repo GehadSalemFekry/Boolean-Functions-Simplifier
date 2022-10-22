@@ -88,9 +88,15 @@ void QmAlgo::populateEssentialPrimeImplicants() {
 
     map<int, int> numOfCoversPerTerm;
 
-    for (auto imp : primeImplicants) 
-        for (int term : imp.getCoveredTerms()) 
+    for (auto imp : primeImplicants) {
+        for (int term : imp.getCoveredTerms()) {
+            if (coversOverMinterms.count(term)) coversOverMinterms[term].push_back(imp);
+            else coversOverMinterms[term] = {imp};
+
             numOfCoversPerTerm[term]++;
+            if (Terms[term]) isMinTermCovered[term] = false;
+        }
+    }
 
     set<Implicant, comparatorImp> essentialPIs;
     for (auto imp : primeImplicants) 
@@ -99,14 +105,29 @@ void QmAlgo::populateEssentialPrimeImplicants() {
 
     essentialPrimeImplicants.assign(essentialPIs.begin(), essentialPIs.end()); // To make sure there is not EPI duplicated
 
-    map<int, int> covered;
     for (auto essential : essentialPrimeImplicants) 
-        for (int term : essential.getCoveredTerms()) covered[term] = true;
-    
-    for (auto term : Terms) {
-        if (term.second && !covered.count(term.first)) mintermsnotcovered.push_back(term.first);
+        for (int term : essential.getCoveredTerms()) isMinTermCovered[term] = true;
+
+    for (auto term : isMinTermCovered) {
+        if (!term.second) {
+            int mxNotCovered = 0;
+            Implicant toInclude;
+            for (auto imp : coversOverMinterms[term.first]) {
+                int curNotCovered = 0;
+                for (int u : imp.getCoveredTerms()) {
+                    if (Terms[u] && !isMinTermCovered[u]) curNotCovered++;
+                }
+                if (curNotCovered > mxNotCovered) {
+                    mxNotCovered = curNotCovered;
+                    toInclude = imp;
+                }
+            }
+            essentialPIs.insert(toInclude); // these aren't EPIs but to be added to the minimized expression
+        }
     }
 
+    reducedExpression.assign(essentialPIs.begin(), essentialPIs.end());
+    
     // vector<int> mintermscovered;
     // for (auto it : table) {
     //     if (it.second.frequency == 1) {
@@ -121,9 +142,6 @@ void QmAlgo::populateEssentialPrimeImplicants() {
 }
 
 void QmAlgo::printPIs(){
-    reduce();
-    populatePrimeImplicants();
-
     cout << "\t\t\tPrime Implicants\n"; // centered
 
     cout << "\t\tPrime Implicant\t\t\t" << "Minterms Covered\t\t" << "Don't Cares Covered\n";
@@ -146,12 +164,10 @@ void QmAlgo::printPIs(){
         cout << "\n";
     }
 
-    cout << "__________________________________________________\n\n";
+    cout << "___________________________________________________________________________________________________\n\n";
 }
 
 void QmAlgo::printEPIs(){
-    populateEssentialPrimeImplicants();
-
     cout << "\t\t\tEssential Prime Implicants\n"; // centered
 
     cout << "\tEssential Prime Implicant\t\t" << "Minterms Covered\t\t" << "Don't Cares Covered\n";
@@ -174,6 +190,25 @@ void QmAlgo::printEPIs(){
         cout << "\n";
     }
 
-    cout << "__________________________________________________\n\n";
+    cout << "___________________________________________________________________________________________________\n\n";
 }
 
+
+void QmAlgo::generateMinmizedLogicExpression() {
+    cout << "\t\t\tThe Overall Reduced Boolean Expression is:\n"; // centered
+    for (int i = 0; i < reducedExpression.size(); i++) {
+        cout << reducedExpression[i].name;
+        if (i != reducedExpression.size() - 1) cout << " + ";
+    }
+    cout << "\n";
+    cout << "___________________________________________________________________________________________________\n\n";
+}
+
+void QmAlgo::runAlgo() {
+    reduce();
+    populatePrimeImplicants();
+    printPIs();
+    populateEssentialPrimeImplicants();
+    printEPIs();
+    generateMinmizedLogicExpression();
+}

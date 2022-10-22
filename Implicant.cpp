@@ -1,5 +1,6 @@
 #include "Implicant.h"
 
+Implicant::Implicant() {}
 
 Implicant::Implicant(int variables, int n){
     this->noVariables = variables;
