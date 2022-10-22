@@ -94,7 +94,8 @@ vector<int> seperate(string x) {
 
 
 int main() {
-    freopen("test.in", "r", stdin);
+    freopen("testValid.in", "r", stdin);
+    freopen("testValidOutput.out", "w", stdout);
 
     cout << "___________________________________________________________________________________________________\n\n";
     int testCases; cin >> testCases;
