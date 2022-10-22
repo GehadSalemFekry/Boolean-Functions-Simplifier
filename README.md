@@ -3,7 +3,7 @@
 The project is about implementing the Quine McLuskey Algorithm to minimize boolean expression and generate Prime Implicants and Essential Prime Implicants. 
 
 The output of the project is demonstated in the screenshot:
-[](./example.jpeg)
+![](./example.jpeg)
 
 ## Folder Structure:
 We have 2 classes: `QmAlgo` and `Implicant`.
