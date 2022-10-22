@@ -32,7 +32,6 @@ class QmAlgo {
     string fileName; // input file 
     fstream inputFile;
 
-    // to be done: map to list all minterms and dont cares' numbers to retrieve them easily
     map<int, bool> Terms; // storing minterms and dont cares, such that false means dontcare
     map<Implicant, bool, comparatorImp> Implicants; // map to store the minImplicants (bool: istaken or not)
 

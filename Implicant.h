@@ -26,7 +26,7 @@ public:
     string getName();
     string getBin();
     int getNoTerms();  //gets the number of covered terms
-    set<int> getCoveredTerms();
+    set<int> getCoveredTerms() const;
 
     void pad(int n); // pad the binary representation of the Implicant with zeroes according to the number of bits
     string dectoBin(int n); // convert a decimal to a binary

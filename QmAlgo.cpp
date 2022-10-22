@@ -62,8 +62,16 @@ void QmAlgo::reduce(){
 
 void QmAlgo::populatePrimeImplicants(){
     for (auto imp: Implicants){
-        if (!imp.second) // to be done: check if all terms of the implicants are dontcares, so dont add this implicant
-            primeImplicants.push_back(imp.first);
+
+        bool checkAllDontCare = false; // check if the implicant has dontcares only
+        for(auto term: imp.first.getCoveredTerms()){
+            if(!checkAllDontCare)
+                checkAllDontCare=checkAllDontCare||Terms[term];  // as long as term is a dontcare, keep looping untill at least encountering one single minterm
+        }
+
+        if(checkAllDontCare)
+            if (!imp.second)
+                primeImplicants.push_back(imp.first);
     }
 }
 
@@ -137,7 +145,7 @@ void QmAlgo::populateEssentialPrimeImplicants() {
 void QmAlgo::printPIs(){
     cout << "\t\t\t\t\tPrime Implicants\n\n"; // centered
 
-    cout << "\t\tPrime Implicant\t\t\t" << "Minterms Covered\t\t" << "Don't Cares Covered\n";
+    cout << "Prime Implicant\t\t\t" << "Minterms Covered\t\t" << "Don't Cares Covered\n";
     cout << "Binary Representation\t\t" << "Term\n"; 
     for(auto prime: primeImplicants){ 
         cout << prime.getBin() << "\t\t\t\t" << prime.getName() << "\t\t";

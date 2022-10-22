@@ -61,11 +61,11 @@ bool repetition(vector<int> M, vector<int> DC) {
 bool validate(int NoV, vector<int> M, vector<int> DC) {
 	int Total = pow(2, NoV);
 	for (int i : M) {
-		if (i > Total) return false;
+		if (i >= Total) return false;
 	}
 
 	for (int i : DC) {
-		if (i > Total) return false;
+		if (i >= Total) return false;
 	}
 
 	// Sort the two vectors then compare them to make sure there are no repeated terms
@@ -79,6 +79,7 @@ bool validate(int NoV, vector<int> M, vector<int> DC) {
 
 vector<int> seperate(string x) {
     vector<int> terms;
+    if(x[0]=='-')return terms;
     string a = "";
     for (int i = 0; i < x.size(); i++) {
         if (x[i] == ',') {
@@ -88,7 +89,8 @@ vector<int> seperate(string x) {
             a += x[i];
         }
     }
-    terms.push_back(stoi(a));
+    if(!a.empty()) // to avoid invalid argument for stoi
+        terms.push_back(stoi(a));
     return terms;
 }
 

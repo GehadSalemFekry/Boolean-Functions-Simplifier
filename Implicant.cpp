@@ -109,7 +109,7 @@ int Implicant::getNoTerms(){
 }
 
 
-set<int> Implicant::getCoveredTerms(){
+set<int> Implicant::getCoveredTerms() const {
     return this->coveredTerms;
 }
 
