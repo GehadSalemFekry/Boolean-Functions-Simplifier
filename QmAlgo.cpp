@@ -100,11 +100,21 @@ void QmAlgo::populateEssentialPrimeImplicants(vector<int>& minterms) {
         }
     }
 
+    vector<int> mintermscovered;
     for (auto it : table) {
-        if (it.second.frequency == 1) essentialPrimeImplicants.push_back(it.second.implicant);
+        if (it.second.frequency == 1) {
+            essentialPrimeImplicants.push_back(it.second.implicant);
+            mintermscovered.insert(mintermscovered.end(), it.second.implicant.coveredTerms.begin(), it.second.implicant.coveredTerms.end());
+        }
     }
 
-    for (Implicant imp : essentialPrimeImplicants) cout << imp.getName();
+    for (int i : minterms) {
+        if (find(mintermscovered.begin(), mintermscovered.end(), i) == mintermscovered.end()) mintermsnotcovered.push_back(i);
+    }
+
+    
+
+    //for (Implicant imp : essentialPrimeImplicants) cout << imp.getName();
 
 }
 

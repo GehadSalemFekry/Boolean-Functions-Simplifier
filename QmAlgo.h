@@ -43,6 +43,7 @@ class QmAlgo {
 
     vector<Implicant> primeImplicants;
     vector<Implicant> essentialPrimeImplicants;
+    vector<int> mintermsnotcovered; //not covered by EPIs
 
     void reduce(); // Main Algorithm
 
