@@ -46,11 +46,8 @@ class QmAlgo {
     void reduce(); // Main Algorithm
 
 public:
-    // QmAlgo(string in); // constructor to take the name of the input file
-
-    void validate(); // validate the user's input and insert it in the Implicants map
+    QmAlgo(int variables, vector<int>& minterms, vector<int>& dontcares); // populate the map from values validated in the validation method
     
-    void populateMinterms(int variables, vector<int>& minterms, vector<int>& dontcares); // populate the map from values validated in the validation method
     void populatePrimeImplicants();
     void populateEssentialPrimeImplicants();
 

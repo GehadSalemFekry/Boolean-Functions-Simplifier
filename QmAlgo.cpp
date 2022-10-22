@@ -1,13 +1,6 @@
 #include "QmAlgo.h"
 
-// QmAlgo::QmAlgo(string in){
-//     fileName= in;
-// }
-
-
-
-
-void QmAlgo::populateMinterms(int variables, vector<int>& minterms, vector<int>& dontcares){
+QmAlgo::QmAlgo(int variables, vector<int>& minterms, vector<int>& dontcares){
     this->variables = variables;
     for(int min: minterms){
         Implicant imp(variables, min);
@@ -20,7 +13,6 @@ void QmAlgo::populateMinterms(int variables, vector<int>& minterms, vector<int>&
         Implicants[imp]=false;
         Terms[dont]=false;
     }
-
 }
 
 void QmAlgo::reduce(){
@@ -142,7 +134,7 @@ void QmAlgo::populateEssentialPrimeImplicants() {
 }
 
 void QmAlgo::printPIs(){
-    cout << "\t\t\tPrime Implicants\n"; // centered
+    cout << "\t\t\t\t\tPrime Implicants\n\n"; // centered
 
     cout << "\t\tPrime Implicant\t\t\t" << "Minterms Covered\t\t" << "Don't Cares Covered\n";
     cout << "Binary Representation\t\t" << "Term\n"; 
@@ -168,7 +160,7 @@ void QmAlgo::printPIs(){
 }
 
 void QmAlgo::printEPIs(){
-    cout << "\t\t\tEssential Prime Implicants\n"; // centered
+    cout << "\t\t\t\t   Essential Prime Implicants\n\n"; // centered
 
     cout << "\tEssential Prime Implicant\t\t" << "Minterms Covered\t\t" << "Don't Cares Covered\n";
     cout << "Binary Representation\t\t" << "Term\n"; 
@@ -195,13 +187,12 @@ void QmAlgo::printEPIs(){
 
 
 void QmAlgo::generateMinmizedLogicExpression() {
-    cout << "\t\t\tThe Overall Reduced Boolean Expression is:\n"; // centered
+    cout << "\t\t\t   The Overall Reduced Boolean Expression is:\n"; // centered
     for (int i = 0; i < reducedExpression.size(); i++) {
         cout << reducedExpression[i].name;
         if (i != reducedExpression.size() - 1) cout << " + ";
     }
     cout << "\n";
-    cout << "___________________________________________________________________________________________________\n\n";
 }
 
 void QmAlgo::runAlgo() {
