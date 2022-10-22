@@ -64,7 +64,7 @@ void QmAlgo::reduce(){
 
                         Implicant mergedB(newBinary, mergedSet); // to be done: add covered, add dont care
 
-
+                        
 
                         // Merged
                         cur.second = true; // current element that we are iterating over its bits is checked
@@ -86,6 +86,26 @@ void QmAlgo::populatePrimeImplicants(){
         if (imp.second) // to be done: check if all terms of the implicants are dontcares, so dont add this implicant
             primeImplicants.push_back(imp.first);
     }
+}
+
+void QmAlgo::populateEssentialPrimeImplicants(vector<int>& minterms) {
+
+    map<int, pairimp> table;
+
+    for (auto imp : primeImplicants) {
+        for (int term : imp.getCoveredTerms()) {
+        map<int, pairimp> :: iterator it = table.find(term);
+            it->second.frequency++;
+            it->second.implicant = imp;
+        }
+    }
+
+    for (auto it : table) {
+        if (it.second.frequency == 1) essentialPrimeImplicants.push_back(it.second.implicant);
+    }
+
+    for (Implicant imp : essentialPrimeImplicants) cout << imp.getName();
+
 }
 
 void QmAlgo::printPIs(){

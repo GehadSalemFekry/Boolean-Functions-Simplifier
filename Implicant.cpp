@@ -4,13 +4,13 @@
 Implicant::Implicant(int variables, int n){
 
     this->binary = dectoBin(n);
-    pad(variables-1); // padding the binary with zeroes
+    pad(variables); // padding the binary with zeroes
 
     int index= binary.length()-1; // start from the end since the binary is read from right to left
 
     this->name="";
 
-    for(char i='A';i<char(65+variables+1);i++){ // write the expression in Implicants of letters according ('A'-->65)
+    for(char i='A';i<char(65+variables);i++){ // write the expression in Implicants of letters according ('A'-->65)
         this->name+=i;
         if(this->binary[index--]=='0'){
             this->name+='\'';

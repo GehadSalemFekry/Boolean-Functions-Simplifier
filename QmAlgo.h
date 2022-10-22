@@ -21,6 +21,11 @@ struct comparatorImp {
     }
 };
 
+struct pairimp {
+    Implicant implicant;
+    int frequency;
+};
+
 class QmAlgo {
     int variables; // no of variables
 
@@ -52,7 +57,7 @@ public:
     
     void populatePrimeImplicants();
 
-    void populateEssentialPrimeImplicants(); 
+    void populateEssentialPrimeImplicants(vector<int>& minterms);
 
     void printPIs(); // print all prime Implicants
 

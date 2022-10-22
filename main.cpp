@@ -98,5 +98,6 @@ int main(){
 
 	test1.populateMinterms(4, minterms, dontcares);
     test1.printPIs();
+    test1.populateEssentialPrimeImplicants(minterms);
 
 }
