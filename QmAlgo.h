@@ -4,8 +4,8 @@
 #include <fstream>
 #include <map>
 #include <vector>
-#include "Implicant.h"
-
+#include <algorithm>
+#include "Implicant.cpp"
 
 using namespace std;
 
@@ -30,16 +30,12 @@ class QmAlgo {
     int variables; // no of variables
 
     string fileName; // input file 
-
     fstream inputFile;
 
     // to be done: map to list all minterms and dont cares' numbers to retrieve them easily
 
-    map<int,bool> Terms; // storing minterms and dont cares, such that false means dontcare
-
-
-    map<Implicant, bool, comparatorImp> Implicants; // map to store the minImplicants and don't care values
-    // istaken or not
+    map<int, bool> Terms; // storing minterms and dont cares, such that false means dontcare
+    map<Implicant, bool, comparatorImp> Implicants; // map to store the minImplicants (bool: istaken or not)
 
     vector<Implicant> primeImplicants;
     vector<Implicant> essentialPrimeImplicants;
@@ -57,19 +53,14 @@ public:
     // dont need to bother the print methods of PIs and EPIs with populating
     
     void populatePrimeImplicants();
-
-    void populateEssentialPrimeImplicants(vector<int>& minterms);
+    void populateEssentialPrimeImplicants();
 
     void printPIs(); // print all prime Implicants
-
     void printEPIs(); // print all essential prime Implicants
-
 
     void PITable(); // print the prime Implicants table/chart
 
-
     void minmizedLogicExpression(); // get the very minimized logic expression of the function according to the PI table 
-
 };
 
 #endif

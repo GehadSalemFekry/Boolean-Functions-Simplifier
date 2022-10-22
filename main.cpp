@@ -2,11 +2,12 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <algorithm>
 #include <math.h>
 #include <map>
 
-#include "Implicant.h"
-#include "QmAlgo.h"
+// #include "Implicant.cpp"
+#include "QmAlgo.cpp"
 
 using namespace std;
 
@@ -78,7 +79,7 @@ using namespace std;
 
 // 	return true;
 // }
-int main(){
+int main() {
     // temp x,y;
     // x.a="first",x.b=1;
     // y.a="second",x.b=2;
@@ -94,10 +95,12 @@ int main(){
 
 	QmAlgo test1;
 
-	vector<int> minterms = {1, 2, 5}, dontcares = {0, 8};
+	vector<int> minterms = {1, 2, 5}, dontcares = {0, 8, 9};
 
 	test1.populateMinterms(4, minterms, dontcares);
     test1.printPIs();
-    test1.populateEssentialPrimeImplicants(minterms);
+    test1.printEPIs();
+
+    // test1.populateEssentialPrimeImplicants(minterms);
 
 }

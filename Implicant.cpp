@@ -2,32 +2,42 @@
 
 
 Implicant::Implicant(int variables, int n){
-
+    this->noVariables = variables;
     this->binary = dectoBin(n);
     pad(variables); // padding the binary with zeroes
 
-    int index= 0; // start from the end since the binary is read from right to left
-
-    this->name="";
-
-    for(char i='A';i<char(65+variables);i++){ // write the expression in Implicants of letters according ('A'-->65)
-        this->name+=i;
-        if(this->binary[index++]=='0'){
-            this->name+='\'';
-        }
-    }
-
+    generateName();
+    coveredTerms.insert(n);
 }
 
 Implicant::Implicant(string x, set<int> coveredTerms) {
     this->binary = x;
-    this->coveredTerms=coveredTerms;
+    this->noVariables = x.size();
+    this->coveredTerms = coveredTerms;
+    generateName();
 }
 
+
 Implicant::Implicant(const Implicant& imp){
-    this->binary=imp.binary;
-    this->name=imp.name;
-    this->coveredTerms=imp.coveredTerms;
+    this->binary = imp.binary;
+    this->name = imp.name;
+    this->coveredTerms = imp.coveredTerms;
+    this->noVariables = imp.noVariables;
+    generateName();
+}
+
+void Implicant::generateName() {
+    name = "";
+
+    for(char c = 'A'; c < char('A'+ noVariables); c++){ // write the expression in Implicants of letters
+        int idx = c - 'A';
+        if (binary[idx] != '-') {
+            name += c;
+            if(binary[idx] == '0'){
+                name += '\'';
+            }
+        }
+    }
 }
 
 
@@ -43,20 +53,22 @@ string Implicant::dectoBin(int n){
 
 
 void Implicant::pad(int variables){
+    if (binary.length() > variables) {
+        binary = binary.substr(1, binary.size() - 1);
+        return;
+    }
 
     int actualLengthBeforePadding = binary.length();
     int zeroesPadded= variables-actualLengthBeforePadding;
 
-    string b="";
-    for(int i=0;i<zeroesPadded;i++){
-        b+="0";
+    string b = "";
+    for(int i = 0;i < zeroesPadded; i++){
+        b += "0";
     }
 
-    b=b+this->binary;
+    b = b + this->binary;
 
     this->binary=b; // zeroes added to the beginning of the binary 
-
-
 }
 
 
@@ -71,12 +83,12 @@ string Implicant::getName(){
 
 string Implicant::replace_complements(int idx){
     string temp = binary;
-    this->binary[idx] = '-';
+    temp[idx] = '-';
     return temp;
 }
 
 bool Implicant:: operator ==(const Implicant& Implicant1){
-    return this->binary==Implicant1.binary;
+    return this->binary == Implicant1.binary;
 }
 
 char& Implicant:: operator[](int i){
