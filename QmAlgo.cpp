@@ -182,17 +182,6 @@ void QmAlgo::printEPIs(){
 
 void QmAlgo::generateMinmizedLogicExpression() {
     cout << "\t\t\t   The Overall Reduced Boolean Expression is:\n"; // centered
-
-    if(ReducedExpression.size()==1){ // check if tutology
-        Implicant imp = ReducedExpression[0];
-        bool isTautology = true;
-        for(char c: imp.getName())
-            isTautology=isTautology&&c=='-';
-        if(isTautology)
-            cout << 1 << '\n';
-    }
-    else if(ReducedExpression.size()==0)
-        cout << 0 << '\n';
     
     for (int i = 0; i < ReducedExpression.size(); i++) {
         cout << ReducedExpression[i].name;
