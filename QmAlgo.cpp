@@ -4,20 +4,20 @@ QmAlgo::QmAlgo(int variables, vector<int>& minterms, vector<int>& dontcares){
     this->variables = variables;
     for(int min: minterms){
         Implicant imp(variables, min);
-        Implicants[imp]=false;
-        Terms[min]=true;
+        IMPLICANTS[imp]=false;
+        TERMS[min]=true;
     }
     
     for(int dont: dontcares){
         Implicant imp(variables, dont);
-        Implicants[imp]=false;
-        Terms[dont]=false;
+        IMPLICANTS[imp]=false;
+        TERMS[dont]=false;
     }
 }
 
 void QmAlgo::reduce(){
     // map to store the minImplicants and don't care values
-    map<Implicant, bool, comparatorImp> merged = Implicants;
+    map<Implicant, bool, comparatorImp> merged = IMPLICANTS;
     while (!merged.empty()) {
         map<Implicant, bool, comparatorImp> newlyMerged;
 
@@ -39,7 +39,7 @@ void QmAlgo::reduce(){
                         set<int> coveredTerms2 = found.getCoveredTerms();
                         mergedSet.insert(coveredTerms2.begin(), coveredTerms2.end()); // merge the two sets
 
-                        Implicant mergedB(newBinary, mergedSet); // to be done: add covered, add dont care
+                        Implicant mergedB(newBinary, mergedSet);
                         
                         // Merged
                         merged[cur.first] = true; // current element that we are iterating over its bits is checked
@@ -52,70 +52,66 @@ void QmAlgo::reduce(){
         }
         
         for(auto imp: merged) // Update previous values of implicants 
-            Implicants[imp.first] = imp.second;
+            IMPLICANTS[imp.first] = imp.second;
         for(auto imp: newlyMerged) // Add new values
-            Implicants[imp.first] = imp.second;
+            IMPLICANTS[imp.first] = imp.second;
 
         merged = newlyMerged;
     }
 }
 
 void QmAlgo::populatePrimeImplicants(){
-    for (auto imp: Implicants){
+    for (auto imp: IMPLICANTS){
 
         bool checkAllDontCare = false; // check if the implicant has dontcares only
         for(auto term: imp.first.getCoveredTerms()){
             if(!checkAllDontCare)
-                checkAllDontCare=checkAllDontCare||Terms[term];  // as long as term is a dontcare, keep looping untill at least encountering one single minterm
+                checkAllDontCare=checkAllDontCare||TERMS[term];  // as long as term is a dontcare, keep looping until at least encountering one single minterm
         }
 
         if(checkAllDontCare)
             if (!imp.second)
-                primeImplicants.push_back(imp.first);
+                PrimeImplicants.push_back(imp.first);
     }
 }
 
 void QmAlgo::populateEssentialPrimeImplicants() {
-    // map<int, pairimp> table;
 
-    // for (auto imp : primeImplicants) {
-    //     for (int term : imp.getCoveredTerms()) {
-    //     map<int, pairimp> :: iterator it = table.find(term);
-    //         it->second.frequency++;
-    //         it->second.implicant = imp;
-    //     }
-    // }
 
     map<int, int> numOfCoversPerTerm;
 
-    for (auto imp : primeImplicants) {
+    //check all covered terms in all implicants and record the frequency of each term
+    for (auto imp : PrimeImplicants) {
         for (int term : imp.getCoveredTerms()) {
-            if (coversOverMinterms.count(term)) coversOverMinterms[term].push_back(imp);
-            else coversOverMinterms[term] = {imp};
+            if (COVERSOVERMINTERM.count(term)) COVERSOVERMINTERM[term].push_back(imp);
+            else COVERSOVERMINTERM[term] = {imp};
 
             numOfCoversPerTerm[term]++;
-            if (Terms[term]) isMinTermCovered[term] = false;
+            if (TERMS[term]) isMINTERMCOVERED[term] = false;
         }
     }
 
+    //if the frequenncy of the term is 1 then its cover is an EPI
     set<Implicant, comparatorImp> essentialPIs;
-    for (auto imp : primeImplicants) 
+    for (auto imp : PrimeImplicants) 
         for (int term : imp.getCoveredTerms()) 
-            if (Terms[term] && numOfCoversPerTerm[term] == 1) essentialPIs.insert(imp);
+            if (TERMS[term] && numOfCoversPerTerm[term] == 1) essentialPIs.insert(imp);
 
-    essentialPrimeImplicants.assign(essentialPIs.begin(), essentialPIs.end()); // To make sure there is not EPI duplicated
+    EssentialPrimeImplicants.assign(essentialPIs.begin(), essentialPIs.end()); // To make sure there is not EPI duplicated
 
-    for (auto essential : essentialPrimeImplicants) 
-        for (int term : essential.getCoveredTerms()) isMinTermCovered[term] = true;
+    for (auto essential : EssentialPrimeImplicants) 
+        for (int term : essential.getCoveredTerms()) isMINTERMCOVERED[term] = true;
 
-    for (auto term : isMinTermCovered) {
+    //reduce the Boolean expression
+    //find the minterm not covered by the EPIs and find the biggest PI that covers these terms
+    for (auto term : isMINTERMCOVERED) {
         if (!term.second) {
             int mxNotCovered = 0;
             Implicant toInclude;
-            for (auto imp : coversOverMinterms[term.first]) {
+            for (auto imp : COVERSOVERMINTERM[term.first]) {
                 int curNotCovered = 0;
                 for (int u : imp.getCoveredTerms()) {
-                    if (Terms[u] && !isMinTermCovered[u]) curNotCovered++;
+                    if (TERMS[u] && !isMINTERMCOVERED[u]) curNotCovered++;
                 }
                 if (curNotCovered > mxNotCovered) {
                     mxNotCovered = curNotCovered;
@@ -123,43 +119,32 @@ void QmAlgo::populateEssentialPrimeImplicants() {
                 }
             }
             essentialPIs.insert(toInclude); // these aren't EPIs but to be added to the minimized expression
-            for (int u : toInclude.getCoveredTerms()) isMinTermCovered[u] = true;
+            for (int u : toInclude.getCoveredTerms()) isMINTERMCOVERED[u] = true;
         }
     }
 
-    reducedExpression.assign(essentialPIs.begin(), essentialPIs.end());
-    
-    // vector<int> mintermscovered;
-    // for (auto it : table) {
-    //     if (it.second.frequency == 1) {
-    //         essentialPrimeImplicants.push_back(it.second.implicant);
-    //         mintermscovered.insert(mintermscovered.end(), it.second.implicant.coveredTerms.begin(), it.second.implicant.coveredTerms.end());
-    //     }
-    // }
+    ReducedExpression.assign(essentialPIs.begin(), essentialPIs.end());
 
-    // for (int i : minterms) {
-    //     if (find(mintermscovered.begin(), mintermscovered.end(), i) == mintermscovered.end()) mintermsnotcovered.push_back(i);
-    // }
 }
 
 void QmAlgo::printPIs(){
-    cout << "\t\t\t\t\tPrime Implicants\n\n"; // centered
+    cout << "\t\t\t\t\tPrime IMPLICANTS\n\n"; // centered
 
     cout << "Prime Implicant\t\t\t" << "Minterms Covered\t\t" << "Don't Cares Covered\n";
     cout << "Binary Representation\t\t" << "Term\n"; 
-    for(auto prime: primeImplicants){ 
+    for(auto prime: PrimeImplicants){ 
         cout << prime.getBin() << "\t\t\t\t" << prime.getName() << "\t\t";
 
         set<int> coveredTerms = prime.getCoveredTerms();
         // minterms
         for (auto minterm : coveredTerms)
-            if (Terms[minterm]) 
+            if (TERMS[minterm]) 
                 cout << minterm << ", ";
         cout << "\t\t\t\t";
 
         // dontcares
         for (auto dontcare : coveredTerms)
-            if (!Terms[dontcare]) 
+            if (!TERMS[dontcare]) 
                 cout << dontcare << ", ";
     
         cout << "\n";
@@ -169,23 +154,23 @@ void QmAlgo::printPIs(){
 }
 
 void QmAlgo::printEPIs(){
-    cout << "\t\t\t\t   Essential Prime Implicants\n\n"; // centered
+    cout << "\t\t\t\t   Essential Prime IMPLICANTS\n\n"; // centered
 
     cout << "\tEssential Prime Implicant\t\t" << "Minterms Covered\t\t" << "Don't Cares Covered\n";
     cout << "Binary Representation\t\t" << "Term\n"; 
-    for(auto prime: essentialPrimeImplicants){ 
+    for(auto prime: EssentialPrimeImplicants){ 
         cout << prime.getBin() << "\t\t\t\t" << prime.getName() << "\t\t";
 
         set<int> coveredTerms = prime.getCoveredTerms();
         // minterms
         for (auto minterm : coveredTerms)
-            if (Terms[minterm]) 
+            if (TERMS[minterm]) 
                 cout << minterm << ", ";
         cout << "\t\t\t\t";
 
         // dontcares
         for (auto dontcare : coveredTerms)
-            if (!Terms[dontcare]) 
+            if (!TERMS[dontcare]) 
                 cout << dontcare << ", ";
     
         cout << "\n";
@@ -197,9 +182,9 @@ void QmAlgo::printEPIs(){
 
 void QmAlgo::generateMinmizedLogicExpression() {
     cout << "\t\t\t   The Overall Reduced Boolean Expression is:\n"; // centered
-    for (int i = 0; i < reducedExpression.size(); i++) {
-        cout << reducedExpression[i].name;
-        if (i != reducedExpression.size() - 1) cout << " + ";
+    for (int i = 0; i < ReducedExpression.size(); i++) {
+        cout << ReducedExpression[i].name;
+        if (i != ReducedExpression.size() - 1) cout << " + ";
     }
     cout << "\n";
 }

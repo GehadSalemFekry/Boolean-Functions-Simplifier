@@ -5,7 +5,7 @@
 #include <map>
 #include <vector>
 #include <algorithm>
-#include "Implicant.cpp"
+#include "Implicant.h"
 
 using namespace std;
 
@@ -21,26 +21,20 @@ struct comparatorImp {
     }
 };
 
-struct pairimp {
-    Implicant implicant;
-    int frequency;
-};
-
 class QmAlgo {
     int variables; // no of variables
 
     string fileName; // input file 
     fstream inputFile;
 
-    map<int, bool> Terms; // storing minterms and dont cares, such that false means dontcare
-    map<Implicant, bool, comparatorImp> Implicants; // map to store the minImplicants (bool: istaken or not)
+    map<int, bool> TERMS; // storing minterms and dont cares, such that false means dontcare
+    map<Implicant, bool, comparatorImp> IMPLICANTS; // map to store the minImplicants (bool: istaken or not)
+    map<int, vector<Implicant>> COVERSOVERMINTERM;
+    map<int, bool> isMINTERMCOVERED;
 
-    vector<Implicant> primeImplicants;
-    vector<Implicant> essentialPrimeImplicants;
-    vector<Implicant> reducedExpression;
-    map<int, vector<Implicant>> coversOverMinterms;
-    map<int, bool> isMinTermCovered;
-    vector<int> mintermsnotcovered; //not covered by EPIs
+    vector<Implicant> PrimeImplicants;
+    vector<Implicant> EssentialPrimeImplicants;
+    vector<Implicant> ReducedExpression;
 
     void reduce(); // Main Algorithm
 
@@ -52,8 +46,7 @@ public:
 
     void printPIs(); // print all prime Implicants
     void printEPIs(); // print all essential prime Implicants
-
-    void PITable(); // print the prime Implicants table/chart
+    
     void generateMinmizedLogicExpression(); // get the very minimized logic expression of the function according to the PI table
     void runAlgo(); 
 };

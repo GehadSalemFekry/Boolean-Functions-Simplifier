@@ -11,7 +11,7 @@ class Implicant{
 public:
     string name; // e.g., A'BCD, which is equivalent to 0111
     string binary; // 0111 equivalent to the name
-    int noVariables;
+    int noVariables; //number of variables
     set<int> coveredTerms;
 
     Implicant();
@@ -19,7 +19,6 @@ public:
     Implicant(string string, set<int> coveredTerms);
     Implicant(const Implicant& imp);
 
-    void setName();
     void addTerm(int num); //adds a term to the coveredterms set
 
     void generateName();
