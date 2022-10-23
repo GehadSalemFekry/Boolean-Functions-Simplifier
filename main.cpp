@@ -6,7 +6,7 @@
 #include <math.h>
 #include <map>
 
-// #include "Implicant.cpp"
+#include "Implicant.cpp"
 #include "QmAlgo.cpp"
 
 using namespace std;

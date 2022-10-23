@@ -3,14 +3,14 @@ ________________________________________________________________________________
 Test 1
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 0-				A'		0, 				1, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -18,13 +18,14 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'
 ___________________________________________________________________________________________________
 
 Test 2
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -32,7 +33,7 @@ Binary Representation		Term
 0-				A'		0, 1, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -40,20 +41,21 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'
 ___________________________________________________________________________________________________
 
 Test 3
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 -1				B		1, 				3, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -61,20 +63,21 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 B
 ___________________________________________________________________________________________________
 
 Test 4
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 0-				A'		0, 				1, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -82,20 +85,21 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'
 ___________________________________________________________________________________________________
 
 Test 5
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 00				A'B'		0, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -103,20 +107,21 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'B'
 ___________________________________________________________________________________________________
 
 Test 6
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 -1-				B		2, 				3, 6, 7, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -124,20 +129,21 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 B
 ___________________________________________________________________________________________________
 
 Test 7
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 01-				A'B		2, 3, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -145,13 +151,14 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'B
 ___________________________________________________________________________________________________
 
 Test 8
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -159,7 +166,7 @@ Binary Representation		Term
 1--				A		4, 5, 6, 				7, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -174,14 +181,14 @@ ________________________________________________________________________________
 Test 9
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 -10				BC'		2, 				6, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -189,20 +196,21 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 BC'
 ___________________________________________________________________________________________________
 
 Test 10
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 0-1				A'C		1, 				3, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -210,13 +218,14 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'C
 ___________________________________________________________________________________________________
 
 Test 11
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -226,20 +235,21 @@ Binary Representation		Term
 0---				A'		0, 1, 2, 				3, 4, 5, 6, 7, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 B'
 ___________________________________________________________________________________________________
 
 Test 12
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -247,20 +257,21 @@ Binary Representation		Term
 0-11				A'CD		3, 				7, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 B'CD
 ___________________________________________________________________________________________________
 
 Test 13
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -275,7 +286,7 @@ Binary Representation		Term
 01--				A'B		4, 5, 6, 7, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -288,7 +299,7 @@ ________________________________________________________________________________
 Test 14
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -301,7 +312,7 @@ Binary Representation		Term
 11--				AB		12, 13, 				14, 15, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -317,7 +328,7 @@ ________________________________________________________________________________
 Test 15
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -326,7 +337,7 @@ Binary Representation		Term
 0-1-				A'C		2, 3, 				6, 7, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -341,7 +352,7 @@ ________________________________________________________________________________
 Test 16
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -356,7 +367,7 @@ Binary Representation		Term
 011-0				A'BCE'		12, 				14, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -370,7 +381,7 @@ ________________________________________________________________________________
 Test 17
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -388,7 +399,7 @@ Binary Representation		Term
 10---				AB'		16, 17, 				18, 19, 20, 21, 22, 23, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -402,7 +413,7 @@ ________________________________________________________________________________
 Test 18
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -415,7 +426,7 @@ Binary Representation		Term
 1-1-0				ACE'		20, 				22, 28, 30, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -430,7 +441,7 @@ ________________________________________________________________________________
 Test 19
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -445,7 +456,7 @@ Binary Representation		Term
 10011				AB'C'DE		19, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -461,7 +472,7 @@ ________________________________________________________________________________
 Test 20
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -479,7 +490,7 @@ Binary Representation		Term
 01-0-				A'BD'		8, 9, 12, 13, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -497,7 +508,7 @@ ________________________________________________________________________________
 Test 21
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -511,7 +522,7 @@ Binary Representation		Term
 0--0--				A'D'		0, 1, 2, 3, 8, 9, 10, 11, 16, 17, 18, 19, 				24, 25, 26, 27, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -526,7 +537,7 @@ ________________________________________________________________________________
 Test 22
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -534,7 +545,7 @@ Binary Representation		Term
 000000				A'B'C'D'E'F'		0, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -549,7 +560,7 @@ ________________________________________________________________________________
 Test 23
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -569,7 +580,7 @@ Binary Representation		Term
 10----				AB'		32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 				42, 43, 44, 45, 46, 47, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -584,7 +595,7 @@ ________________________________________________________________________________
 Test 24
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -592,20 +603,21 @@ Binary Representation		Term
 0000--				A'B'C'D'		0, 				1, 2, 3, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'C'D'F'
 ___________________________________________________________________________________________________
 
 Test 25
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -630,7 +642,7 @@ Binary Representation		Term
 011-00				A'BCE'F'		24, 28, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -647,7 +659,7 @@ ________________________________________________________________________________
 Test 26
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -660,7 +672,7 @@ Binary Representation		Term
 100-010				AB'C'E'FG'		66, 				74, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -675,7 +687,7 @@ ________________________________________________________________________________
 Test 27
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -737,7 +749,7 @@ Binary Representation		Term
 1001--0				AB'C'DG'		72, 				74, 76, 78, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -751,7 +763,7 @@ ________________________________________________________________________________
 Test 28
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -764,7 +776,7 @@ Binary Representation		Term
 100010-				AB'C'D'EF'		68, 69, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -782,7 +794,7 @@ ________________________________________________________________________________
 Test 29
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -835,7 +847,7 @@ Binary Representation		Term
 0100---				A'BC'D'		32, 33, 34, 35, 36, 37, 38, 39, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -850,7 +862,7 @@ ________________________________________________________________________________
 Test 30
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -905,7 +917,7 @@ Binary Representation		Term
 011-0--				A'BCE'		48, 49, 50, 51, 56, 57, 				58, 59, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -920,7 +932,7 @@ ________________________________________________________________________________
 Test 31
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1013,7 +1025,7 @@ Binary Representation		Term
 01111---				A'BCDE		120, 121, 122, 123, 124, 125, 126, 127, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1030,7 +1042,7 @@ ________________________________________________________________________________
 Test 32
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1051,20 +1063,21 @@ Binary Representation		Term
 00--0-0-				A'B'E'G'		0, 1, 				4, 5, 16, 17, 20, 21, 32, 33, 36, 37, 48, 49, 52, 53, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 C'D'G'
 ___________________________________________________________________________________________________
 
 Test 33
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1077,7 +1090,7 @@ Binary Representation		Term
 00110-11				A'B'CDE'GH		51, 55, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1093,7 +1106,7 @@ ________________________________________________________________________________
 Test 34
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1188,7 +1201,7 @@ Binary Representation		Term
 0101--10				A'BC'DGH'		82, 86, 90, 94, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1201,7 +1214,7 @@ ________________________________________________________________________________
 Test 35
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1313,7 +1326,7 @@ Binary Representation		Term
 101000--				AB'CD'E'F'		160, 161, 162, 163, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1332,7 +1345,7 @@ ________________________________________________________________________________
 Test 36
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1367,7 +1380,7 @@ Binary Representation		Term
 0101000-1				A'BC'DE'F'G'I		161, 				163, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1397,7 +1410,7 @@ ________________________________________________________________________________
 Test 37
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1433,7 +1446,7 @@ Binary Representation		Term
 0101001-1				A'BC'DE'F'GI		165, 				167, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1463,7 +1476,7 @@ ________________________________________________________________________________
 Test 38
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1727,7 +1740,7 @@ Binary Representation		Term
 01000----				A'BC'D'E'		128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1740,7 +1753,7 @@ ________________________________________________________________________________
 Test 39
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1901,7 +1914,7 @@ Binary Representation		Term
 0111-000-				A'BCDF'G'H'		224, 225, 				240, 241, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1922,7 +1935,7 @@ ________________________________________________________________________________
 Test 40
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -1983,7 +1996,7 @@ Binary Representation		Term
 0011101-1				A'B'CDEF'GI		117, 				119, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -2003,7 +2016,7 @@ ________________________________________________________________________________
 Test 41
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -2131,7 +2144,7 @@ Binary Representation		Term
 10101110-0				AB'CD'EFGH'J'		696, 698, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -2204,7 +2217,7 @@ ________________________________________________________________________________
 Test 42
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -2424,7 +2437,7 @@ Binary Representation		Term
 0011010--0				A'B'CDE'FG'J'		208, 210, 212, 214, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -2441,7 +2454,7 @@ ________________________________________________________________________________
 Test 43
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -2770,7 +2783,7 @@ Binary Representation		Term
 000011----				A'B'C'D'EF		48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -2783,7 +2796,7 @@ ________________________________________________________________________________
 Test 44
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -3550,7 +3563,7 @@ Binary Representation		Term
 1100011-0-				ABC'D'E'FGI'		792, 793, 				796, 797, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -3568,7 +3581,7 @@ ________________________________________________________________________________
 Test 45
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -4330,7 +4343,7 @@ Binary Representation		Term
 110000--10				ABC'D'E'F'IJ'		770, 774, 778, 782, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -4347,7 +4360,7 @@ ________________________________________________________________________________
 Test 46
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -5950,7 +5963,7 @@ Binary Representation		Term
 0110110----				A'BCD'EFG'		864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -5963,7 +5976,7 @@ ________________________________________________________________________________
 Test 47
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6104,7 +6117,7 @@ Binary Representation		Term
 100101011-0				AB'C'DE'FG'HIK'		1196, 				1198, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6202,7 +6215,7 @@ ________________________________________________________________________________
 Test 48
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6476,7 +6489,7 @@ Binary Representation		Term
 00111010--0				A'B'CDEF'GH'K'		464, 				466, 468, 470, 
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6514,7 +6527,7 @@ ________________________________________________________________________________
 Test 49
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6533,7 +6546,7 @@ Binary Representation		Term
 0000110100-				A'B'C'D'EFG'HI'J'		104, 105, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6552,7 +6565,7 @@ ________________________________________________________________________________
 Test 50
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6692,7 +6705,7 @@ Binary Representation		Term
 00101101101				A'B'CD'EFG'HIJ'K		365, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6729,14 +6742,14 @@ ________________________________________________________________________________
 Test 51
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 00				A'B'		0, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6744,20 +6757,21 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'B'
 ___________________________________________________________________________________________________
 
 Test 52
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 00				A'B'		0, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6765,20 +6779,21 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'B'
 ___________________________________________________________________________________________________
 
 Test 53
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 10				AB'		2, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6786,20 +6801,21 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 AB'
 ___________________________________________________________________________________________________
 
 Test 54
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 00				A'B'		0, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6807,20 +6823,21 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'B'
 ___________________________________________________________________________________________________
 
 Test 55
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 00				A'B'		0, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6828,20 +6845,21 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'B'
 ___________________________________________________________________________________________________
 
 Test 56
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 000				A'B'C'		0, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6849,13 +6867,14 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'B'C'
 ___________________________________________________________________________________________________
 
 Test 57
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6864,7 +6883,7 @@ Binary Representation		Term
 00-				A'B'		0, 1, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6880,14 +6899,14 @@ ________________________________________________________________________________
 Test 58
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 010				A'BC'		2, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6895,20 +6914,21 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'BC'
 ___________________________________________________________________________________________________
 
 Test 59
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 0-0				A'C'		0, 2, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6916,13 +6936,14 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'C'
 ___________________________________________________________________________________________________
 
 Test 60
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6931,7 +6952,7 @@ Binary Representation		Term
 01-				A'B		2, 3, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6946,14 +6967,14 @@ ________________________________________________________________________________
 Test 61
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 0000				A'B'C'D'		0, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6961,20 +6982,21 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'B'C'D'
 ___________________________________________________________________________________________________
 
 Test 62
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 0011				A'B'CD		3, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6982,13 +7004,14 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'B'CD
 ___________________________________________________________________________________________________
 
 Test 63
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -6996,7 +7019,7 @@ Binary Representation		Term
 1100				ABC'D'		12, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7011,7 +7034,7 @@ ________________________________________________________________________________
 Test 64
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7020,7 +7043,7 @@ Binary Representation		Term
 001-				A'B'C		2, 3, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7035,14 +7058,14 @@ ________________________________________________________________________________
 Test 65
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 0001				A'B'C'D		1, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7050,13 +7073,14 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'B'C'D
 ___________________________________________________________________________________________________
 
 Test 66
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7070,7 +7094,7 @@ Binary Representation		Term
 100-1				AB'C'E		17, 19, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7088,14 +7112,14 @@ ________________________________________________________________________________
 Test 67
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 00000				A'B'C'D'E'		0, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7103,13 +7127,14 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'B'C'D'E'
 ___________________________________________________________________________________________________
 
 Test 68
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7125,7 +7150,7 @@ Binary Representation		Term
 11-10				ABDE'		26, 30, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7140,14 +7165,14 @@ ________________________________________________________________________________
 Test 69
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 00000				A'B'C'D'E'		0, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7155,13 +7180,14 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'B'C'D'E'
 ___________________________________________________________________________________________________
 
 Test 70
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7169,7 +7195,7 @@ Binary Representation		Term
 11110				ABCDE'		30, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7184,7 +7210,7 @@ ________________________________________________________________________________
 Test 71
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7213,7 +7239,7 @@ Binary Representation		Term
 10100-				AB'CD'E'		40, 41, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7234,14 +7260,14 @@ ________________________________________________________________________________
 Test 72
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 001110				A'B'CDEF'		14, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7249,13 +7275,14 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'B'CDEF'
 ___________________________________________________________________________________________________
 
 Test 73
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7282,7 +7309,7 @@ Binary Representation		Term
 1000--				AB'C'D'		32, 33, 34, 35, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7299,7 +7326,7 @@ ________________________________________________________________________________
 Test 74
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7308,7 +7335,7 @@ Binary Representation		Term
 001110				A'B'CDEF'		14, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7324,7 +7351,7 @@ ________________________________________________________________________________
 Test 75
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7336,7 +7363,7 @@ Binary Representation		Term
 001---				A'B'C		8, 9, 10, 11, 12, 13, 14, 15, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7353,7 +7380,7 @@ ________________________________________________________________________________
 Test 76
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7368,7 +7395,7 @@ Binary Representation		Term
 0100111				A'BC'D'EFG		39, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7388,7 +7415,7 @@ ________________________________________________________________________________
 Test 77
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7445,7 +7472,7 @@ Binary Representation		Term
 100-0--				AB'C'E'		64, 65, 66, 67, 72, 73, 74, 75, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7459,7 +7486,7 @@ ________________________________________________________________________________
 Test 78
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7475,7 +7502,7 @@ Binary Representation		Term
 1101110				ABC'DEFG'		110, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7498,7 +7525,7 @@ ________________________________________________________________________________
 Test 79
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7506,7 +7533,7 @@ Binary Representation		Term
 00001-1				A'B'C'D'EG		5, 7, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7521,7 +7548,7 @@ ________________________________________________________________________________
 Test 80
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7592,7 +7619,7 @@ Binary Representation		Term
 11110--				ABCDE'		120, 121, 122, 123, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7612,7 +7639,7 @@ ________________________________________________________________________________
 Test 81
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7663,7 +7690,7 @@ Binary Representation		Term
 0111101-				A'BCDEF'G		122, 123, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7691,7 +7718,7 @@ ________________________________________________________________________________
 Test 82
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7755,7 +7782,7 @@ Binary Representation		Term
 1000----				AB'C'D'		128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7772,7 +7799,7 @@ ________________________________________________________________________________
 Test 83
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7804,7 +7831,7 @@ Binary Representation		Term
 0101101-				A'BC'DEF'G		90, 91, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7830,7 +7857,7 @@ ________________________________________________________________________________
 Test 84
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7920,7 +7947,7 @@ Binary Representation		Term
 101010--				AB'CD'EF'		168, 169, 170, 171, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7945,14 +7972,14 @@ ________________________________________________________________________________
 Test 85
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
 000000--				A'B'C'D'E'F'		0, 1, 2, 3, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -7960,13 +7987,14 @@ Binary Representation		Term
 ___________________________________________________________________________________________________
 
 			   The Overall Reduced Boolean Expression is:
+1
 A'B'C'D'E'F'
 ___________________________________________________________________________________________________
 
 Test 86
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -8165,7 +8193,7 @@ Binary Representation		Term
 1110000--				ABCD'E'F'G'		448, 449, 450, 451, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -8209,7 +8237,7 @@ ________________________________________________________________________________
 Test 87
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -8224,7 +8252,7 @@ Binary Representation		Term
 00000111-				A'B'C'D'E'FGH		14, 15, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -8242,7 +8270,7 @@ ________________________________________________________________________________
 Test 88
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -8260,7 +8288,7 @@ Binary Representation		Term
 001111-11				A'B'CDEFHI		123, 127, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -8285,7 +8313,7 @@ ________________________________________________________________________________
 Test 89
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -8362,7 +8390,7 @@ Binary Representation		Term
 01010100-				A'BC'DE'FG'H'		168, 169, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -8388,7 +8416,7 @@ ________________________________________________________________________________
 Test 90
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -8549,7 +8577,7 @@ Binary Representation		Term
 101100100				AB'CDE'F'GH'I'		356, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -8584,7 +8612,7 @@ ________________________________________________________________________________
 Test 91
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -8751,7 +8779,7 @@ Binary Representation		Term
 01000101--				A'BC'D'E'FG'H		276, 277, 278, 279, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -8765,7 +8793,7 @@ ________________________________________________________________________________
 Test 92
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -8886,7 +8914,7 @@ Binary Representation		Term
 0010011-0-				A'B'CD'E'FGI'		152, 153, 156, 157, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -8901,7 +8929,7 @@ ________________________________________________________________________________
 Test 93
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -9777,7 +9805,7 @@ Binary Representation		Term
 11101010--				ABCD'EF'GH'		936, 937, 938, 939, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -9791,7 +9819,7 @@ ________________________________________________________________________________
 Test 94
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -10135,7 +10163,7 @@ Binary Representation		Term
 1111000-00				ABCDE'F'G'I'J'		960, 964, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -10197,7 +10225,7 @@ ________________________________________________________________________________
 Test 95
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -10932,7 +10960,7 @@ Binary Representation		Term
 110000-1--				ABC'D'E'F'H		772, 773, 774, 775, 780, 781, 782, 783, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -10946,7 +10974,7 @@ ________________________________________________________________________________
 Test 96
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -11428,7 +11456,7 @@ Binary Representation		Term
 10001000-00				AB'C'D'EF'G'H'J'K'		1088, 1092, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -11488,7 +11516,7 @@ ________________________________________________________________________________
 Test 97
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -11618,7 +11646,7 @@ Binary Representation		Term
 11100001-11				ABCD'E'F'G'HJK		1803, 1807, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -11729,7 +11757,7 @@ ________________________________________________________________________________
 Test 98
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -11751,7 +11779,7 @@ Binary Representation		Term
 00001000111				A'B'C'D'EF'G'H'IJK		71, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -11777,7 +11805,7 @@ ________________________________________________________________________________
 Test 99
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -11900,7 +11928,7 @@ Binary Representation		Term
 11100101-01				ABCD'E'FG'HJ'K		1833, 1837, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -12019,7 +12047,7 @@ ________________________________________________________________________________
 Test 100
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -12116,7 +12144,7 @@ Binary Representation		Term
 0010-----0-				A'B'CD'J'		256, 257, 260, 261, 264, 265, 268, 269, 272, 273, 276, 277, 280, 281, 284, 285, 288, 289, 292, 293, 296, 297, 300, 301, 304, 305, 308, 309, 312, 313, 316, 317, 320, 321, 324, 325, 328, 329, 332, 333, 336, 337, 340, 341, 344, 345, 348, 349, 352, 353, 356, 357, 360, 361, 364, 365, 368, 369, 372, 373, 376, 377, 380, 381, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -12136,7 +12164,7 @@ ________________________________________________________________________________
 Test 101
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -12148,7 +12176,7 @@ Binary Representation		Term
 11--				AB		12, 13, 14, 15, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -12163,7 +12191,7 @@ ________________________________________________________________________________
 Test 102
 ---------------------------------------------------------------------------------------------------
 
-					Prime Implicants
+					Prime IMPLICANTS
 
 Prime Implicant			Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -12176,7 +12204,7 @@ Binary Representation		Term
 100-				AB'C'		8, 9, 				
 ___________________________________________________________________________________________________
 
-				   Essential Prime Implicants
+				   Essential Prime IMPLICANTS
 
 	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
 Binary Representation		Term
@@ -12198,5 +12226,27 @@ Test 104
 ---------------------------------------------------------------------------------------------------
 
 Sorry, this is an invalid input
+___________________________________________________________________________________________________
+
+Test 105
+---------------------------------------------------------------------------------------------------
+
+					Prime IMPLICANTS
+
+Prime Implicant			Minterms Covered		Don't Cares Covered
+Binary Representation		Term
+--						0, 1, 2, 3, 				
+___________________________________________________________________________________________________
+
+				   Essential Prime IMPLICANTS
+
+	Essential Prime Implicant		Minterms Covered		Don't Cares Covered
+Binary Representation		Term
+--						0, 1, 2, 3, 				
+___________________________________________________________________________________________________
+
+			   The Overall Reduced Boolean Expression is:
+1
+
 ___________________________________________________________________________________________________
 

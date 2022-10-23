@@ -1,5 +1,5 @@
-#ifndef QMALGO
-#define QMALGO
+#ifndef QMALGO_H
+#define QMALGO_H
 
 #include <fstream>
 #include <map>
